@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-size: 14px;
 }
@@ -20,4 +26,33 @@ body {
     font-weight: bold;
     text-decoration: underline;
     letter-spacing: 0.5em;
+}
+.text2 .marked {
+    background-color: pink;
+}
+
+ol {
+     list-style-type: none;
+     list-style-position: inside;
+     counter-increment: number;
+}
+
+ol li::before {
+    content : counter(number) ') ';
+    counter-increment: number;
+}
+#red {
+    color: red;
+}
+#orange {
+    color: orange;
+}
+#coral {
+    color: coral;
+}
+#yellow {
+    color: yellow;
+}
+#darkorange {
+    color: darkorange;
 }
